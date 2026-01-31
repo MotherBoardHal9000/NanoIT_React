@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+:root {
+   --black: #333333;
+   --main-red: #E50038;
+   --sub-pink: #E3007F;
+   --sub-font: 'Noto Sans TC', sans-serif;
+}
+
+body {
+   font-family: 'Pretendard', 'Noto Sans TC', '맑은 고딕', sans-serif;
+   font-weight: 400;
+   font-size: 1.6rem;
+   line-height: 1.5;
+   letter-spacing: -2.5%;
+   color: var(--black);
+   -ms-overflow-style: none;
+   width: 100%;
+   height: auto;
+   position: relative;
+
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+
+canvas{  position: absolute;
+         left:50%;
+
+         transform: translateX(-50%);  
+
+
+       }
+
+
+
+.header {
+    /*aspect-ratio: 가로비율 / 세로비율*/
+   width: 100%;
+   aspect-ratio: 30.642/1;
+   margin: 0 auto;
+   z-index: 99;
+   transition: all 0.5s;
+   border-bottom:1.5px solid var(--black);
+   background-color: #ffffff;
+   position: fixed;
+
+}
+
+
+.inner {
+ /*aspect-ratio: 가로비율 / 세로비율*/
+   aspect-ratio: 1/0.0600;
+   height: 84px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.inner h1{
+    width: 160px;
+    height: 100%;
+   
+}
+
+
+.gnb{
+   width: fit-content;
+   display: flex;
+   align-items: center;
+}
+
+.gnb li a{
+   width: fit-content;
+   color: #a3a3a3;
+   margin: 6px;
+   font-weight: 500;
+}
+
+
+#gnb_Btn{
+   padding: 30 0 30 30px;
+   font-size: 1.5rem;
+   font-weight: 700;
+   cursor: pointer;
+   float: right;
+   margin-left: 138px;
+}
+
+
+
+/*section01*/
+.section01{
+   width: 100%;
+   height: fit-content;
+   border-bottom:1px solid #333333;
+  
+}
+
+
+.section01Contents{
+    width: 1360px;
+    aspect-ratio: 1.5185/1;
+    margin: 0 auto;
+     position: relative;
+}
+
+
+#flower01 {
+   width: 330px;
+   height: 120px;
+   position: absolute;
+   left: 0;
+}
+
+
+ #flower02{
+   width: 147.55px;
+   aspect-ratio: 0.7666/1;
+   position: absolute;
+   bottom: 2.6%;
+   left: 30%;
+   transform: translateX(-30%);
+   rotate: 135deg;
+   z-index: 10;
+}
+
+ #flower03{
+   width: 87.55px;
+   aspect-ratio: 0.7666/1;
+   position: absolute;
+   top: 40.6%;
+   left: 0; 
+   transform: translateX(-30%);transform: scaleX(-1);
+   rotate: 430deg;
+   z-index: 10;
+}
+
+ #flower04{
+    width: 240px;
+   aspect-ratio: 0.9034/1;
+   position: absolute;
+   top: 23.6%;
+   right: 7%;
+   transform: translateX(-10%);
+   rotate:8.1deg;
+   z-index: 12;
+}
+
+
+
+#flower05{
+    width: 140px;
+   aspect-ratio: 0.9034/1;
+   position: absolute;
+   top: 23.6%;
+   right: 40%;
+   transform: translateX(-40%);
+   rotate:210deg;
+   z-index: -2;
+}
+
+#flower06{
+    width: 190px;
+   aspect-ratio: 0.9034/1;
+   position: absolute;
+   top: 43.6%;
+   right: 27%;
+   transform: translateX(-40%);
+   rotate:28deg;
+
+   z-index: -2;
+}
+
+#flower07{
+    width: 180px;
+   aspect-ratio: 0.9034/1;
+   position: absolute;
+   top: 35%;
+   right: 22%;
+   transform: translateX(-40%);
+   rotate:-13deg;
+   z-index: -10;
+   opacity: 60%;
+}
+
+
+
+
+.utill{
+   width: 1160.9px;
+   aspect-ratio: 3.869/1;
+   text-align: center;  
+   line-height:130px ;  
+   font-size: 14rem; 
+   font-weight:900;
+   position: absolute;
+   top:80px ;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 11;
+   margin-top: 7px;
+   background: transparent;
+}
+
+
+.utill ~ .utill{
+      width: 1160.9px;
+   aspect-ratio: 3.869/1;
+   text-align: center;  
+   line-height:130px ;  
+   font-size: 14rem; 
+   font-weight:900;
+   position: absolute;
+   top:210px ;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 11;
+   margin-top: 0px;
+   background: transparent;
+}
+
+
+.section01Contents #mainBanner{
+   width: 484px;
+   aspect-ratio: 1/1;
+   position: absolute;
+   left: 50%;
+   top: 276px;
+   transform: translateX(-50%);
+   object-fit: cover;
+   z-index: 1;
+}
+
+
+
+.section01Contents article{ 
+   font-size: 1.5rem; 
+   font-weight: 500; 
+   letter-spacing: -2.5%;
+   line-height: 140%;
+   text-align: left; 
+   position: absolute; 
+   left: 0; 
+   bottom: 45px;}
+
+
+.section01Contents p{ 
+   font-size: 1.5rem; 
+   font-weight: 500; 
+   letter-spacing: -2.5%;
+   line-height: 140%;
+   text-align: center; 
+   position: absolute; 
+   left: 50%; 
+   transform: translateX(-50%);
+   bottom: 45px;}
+
+
+
+
+
+.section01Contents article ~ article{
+   font-size: 1.5rem; 
+   font-weight: 500; 
+   letter-spacing: -2.5%;
+   line-height: 140%;
+   text-align: right; 
+   position: absolute; 
+   right: 0; 
+   bottom: 45px;
+}
